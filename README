@@ -1,0 +1,66 @@
+= This is epris, your small audio player! =
+
+Unlike xmms2 or mpd, it uses GStreamer and DBus.
+It is written in Vala.
+
+== Like screenshots? ==
+                                                                                                                                                                                                    
+<code language="sh">
+ ~/$ epr clear
+ ~/$ epr add ~/Desktop/`*`.ogg
+ ~/$ epr list
+.. list your ~/Desktop/`*`.ogg
+ ~/$ epr play
+ ~/$ epr show
+artist:         "foobar"
+uri:            "http:///..."
+other-tag:      info
+state:          Playing
+position:       0:00:09.793391000 / 0:02:10.833062500
+ ~/$ epr seek 45%
+ ~/$ epr skip
+.. go to next track
+ ~/$ epr stop
+</code>
+
+`epr` is the command line client.
+
+`epris` is the D-Bus service, you don't have to run it manually, it
+will start and shutdown automatically.
+
+It is based on excellent GStreamer `playbin2`. And it supports *gap-less* playback! (or almost)
+
+== Build dependency ==
+
+ * GStreamer > 0.10
+
+ * dbus-glib-1 > 0.70
+
+If you want to build the from the vala (not from a distribution tarball):
+
+ * Vala > 0.7.4 + custom patch (from bugzilla...)
+
+The code is hosted on [http://gitorious.org/projects/epris Gitorious]:
+{{{
+git clone git://gitorious.org/epris/mainline.git
+}}}
+
+== Why? ==
+
+Epris name come from MPRIS, the Media Player Remote Interface
+Specification. Unfortunately, I didn't like it so much, and I started
+to have disdain for it ("avoir du mepris" in french).
+
+However, writing Epris could help me to help improve future versions
+of MPRIS.
+
+Being not satisfied by the monolithic, itune-like, player, or any of
+the xmms2 or mpd player, I couldn't resist to do my own small
+service.
+
+"Epris", because _all you need is love_...
+
+== Discussion list ==
+
+Feel free to join the silent noise of http://groups.google.com/group/epris
+

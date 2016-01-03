@@ -1,0 +1,45 @@
+# -*- mode: org -*-
+* 0.1
+** DONE Save tracklist position
+** DONE Make a simple debian package
+** DONE Display position in list
+** DONE some project announcement/list/git
+** DONE Don't block after add and remove
+** DONE Fix some of the obvious crasher
+* 0.2
+** DONE Basic seeking (in %)
+** DONE Cmd SHOW
+** DONE Subcommands/porcelain
+** DONE porecelain: clear, next, prev
+** DONE Rework the cmd parsing
+** DONE bash completion script
+** DONE gapless
+** DONE Implement help -a for the completion
+* 0.3
+** TODO add by dir
+** TODO Better notification, optional
+** TODO Save/restore track position
+* Undefined
+** No playlist concept? (stack/selection based)
+** support video url (youtube http://www.youtube.com/watch?v=9gNqkiPg4hk ...)
+** Optionnal Tracker integration
+** Multiple tracklist
+** Tests (always welcome)
+** Improve the cmd parsing
+** Volume ctrl, is it really useful?
+** lyrics, browse artist info
+** Evaluation, metadata
+** audioscrobber
+** randomization
+** Playback rate
+** archive support?
+** More porcelain and extra (edit)
+** Some UI "show" script, using clutter & web data
+** Parsing of time for seeking
+* Vala
+** Report a bug about reply cb with the same name
+** How to manipulate string[] and append ?
+** Enum<->strings!
+** Throwing exceptions in Dbus methods
+** BeginCall does not ref object!...
+** org.freedesktop.DBus.GLib.UnmappedError.EprisErrorQuark.Code2 ?
